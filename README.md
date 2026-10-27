@@ -44,7 +44,6 @@ Cold-Mailer is an AI-powered cold email generation and recruiter outreach platfo
 │   └── mail.service.js       # AI prompt logic for cold email drafting
 ├── utils/
 │   └── ai.utils.js           # OpenRouter API caller
-├── .env.example              # Template for environment variables
 ├── .gitignore                # Safeguard against pushing secrets & dependencies
 ├── index.js                  # Main Express app & Vercel serverless entry point
 ├── package.json              # Project dependencies & scripts
@@ -55,7 +54,7 @@ Cold-Mailer is an AI-powered cold email generation and recruiter outreach platfo
 
 ## ⚙️ Environment Variables
 
-Create a `.env` file in the root directory (based on `.env.example`):
+Create a `.env` file in the root directory with the following variables:
 
 | Variable | Description | Example / Default |
 | :--- | :--- | :--- |
@@ -89,10 +88,7 @@ Create a `.env` file in the root directory (based on `.env.example`):
    ```
 
 3. **Configure environment:**
-   Copy `.env.example` to `.env` and fill in your credentials:
-   ```bash
-   cp .env.example .env
-   ```
+   Create a `.env` file in the root directory and add your credentials.
 
 4. **Run the server in development mode:**
    ```bash
