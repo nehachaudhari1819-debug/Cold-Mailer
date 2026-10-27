@@ -15,6 +15,9 @@ app.use(cors());
 // Parse incoming JSON requests
 app.use(express.json());
 
+// Connect to MongoDB on startup
+connectDB();
+
 // Ensure MongoDB is connected for incoming requests (serverless & local)
 app.use(async (req, res, next) => {
     try {
